@@ -95,7 +95,7 @@ import Listar from '../components/Listar.vue'
           username:this.username, name:this.name, description:this.description, price:this.price
         });
         //Enviar el rango
-        localStorage.setItem('datA', JSON.stringify(this.data));
+        localStorage.setItem('dataA', JSON.stringify(this.data));
         this.cantidad= this.data.length;
       },
       updateCount(value){
