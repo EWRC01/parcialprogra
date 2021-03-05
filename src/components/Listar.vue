@@ -6,17 +6,17 @@
 
     <b-table-simple>
         <b-thead>
-          <b-th>ID</b-th>
-          <b-th>Usuario</b-th>
-          <b-th>Nombre</b-th>
-          <b-th>Descripcion</b-th>
-          <b-th>Price</b-th>
+          <b-th variant="dark">ID</b-th>
+          <b-th variant="dark">Usuario</b-th>
+          <b-th variant="dark">Nombre</b-th>
+          <b-th variant="dark">Descripcion</b-th>
+          <b-th variant="dark">Price</b-th>
           <b-th></b-th>
           <b-th></b-th>
         </b-thead>
         <b-tbody>
           <b-tr v-for="(registro, index) in data" v-bind:key="registro.index">
-              <b-td>{{index}}</b-td>
+              <b-td variant="dark">{{index}}</b-td>
               <b-td>
                     <b-form-input v-model="registro.username" size="lg" disabled></b-form-input>
               </b-td>

@@ -9,7 +9,7 @@
     <hr>
     <b-card-group>
         
-        <b-card title="Nuevo Registro">
+        <b-card bg-variant="danger" text-variant="white" title="Nuevo Registro">
           <b-form>
             <b-row class="my-1">
                 <b-col sm="2">
@@ -46,6 +46,7 @@
             <b-row class="my-1">               
                 <b-col sm="10">
                   <b-button type="button" variant="success" @click="add()">Registrar</b-button>
+                  <b-button type="reset" variant="warning">Limpiar</b-button>
                 </b-col>
             </b-row>
           </b-form>
@@ -53,7 +54,7 @@
           <hr>
          
           </b-card-group>
-           <b-card  header-tag="header" footer-tag="footer">          
+           <b-card bg-variant="dark" text-variant="white" header-tag="header" footer-tag="footer">          
           <b-card-text><Listar :cantidad="cantidad" :data="data" @update="updateCount" /></b-card-text>        
         </b-card>
     </section>
